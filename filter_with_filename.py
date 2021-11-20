@@ -21,5 +21,5 @@ class GreyImage:
       
      
 orig_img = Image.open("picture.jpg")    
-    arr = GreyImage(orig_img).get_grey_image()  
-    arr.save('new_pic_with_filename')
+arr = GreyImage(orig_img).get_grey_image()
+arr.save('new_pic_with_filename')
