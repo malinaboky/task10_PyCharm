@@ -6,11 +6,12 @@ class GreyImage:
     """ Класс, преобразующий картинку в черно-белый пиксель-арт
             Тест значения градации изображения
             >>> res = GreyImage(np.array(Image.open('picture.jpg')), 10, 100)
-            >>> a.grad
+            >>> res.grad
             2
+
             Тест размера блока
-            >>> a = GreyImage(np.array(Image.open('picture.jpg')), 75, 10)
-            >>> a.size
+            >>> res = GreyImage(np.array(Image.open('picture.jpg')), 75, 10)
+            >>> res.size
             75
     """
     def __init__(self, pix_array, pix_size=10, gradation=50):
@@ -25,9 +26,10 @@ class GreyImage:
                 Тест размера полученной картинки
                 >>> GreyImage(np.array(Image.open('picture.jpg')), 10, 50).get_grey_image().size
                 (1920, 1080)
-                >>> GreyImage(np.array(Image.open('picture_2.png')), 10, 50).get_grey_image().size
+                >>> GreyImage(np.array(Image.open('picture_2.jpg')), 10, 50).get_grey_image().size
                 (750, 750)
-                :return: черно-белый картинка
+
+                :return: черно-белая картинка
                 """
         for x in range(0, self.width, self.size):
             for y in range(0, self.height, self.size):
@@ -44,10 +46,11 @@ class GreyImage:
 
                Тест исходной картинки
                >>> GreyImage(np.array(Image.open('picture.jpg')), 10, 50).get_middle_color(1,1)
-               153
+               170
+
                Тест черно-белой картинки
                >>> GreyImage(np.array(Image.open('new_pic.jpg')), 10, 50).get_middle_color(1,1)
-               153
+               155
         """
         return int(self.image[x:x + self.size, y:y + self.size].sum() / 3 // self.size ** 2 // self.grad * self.grad)
 
