@@ -9,7 +9,7 @@ _______________________________________________
 
 ## -Запуск filter.py
 
-<img height="150" src="https://disk.yandex.ru/client/disk/git?idApp=client&dialog=slider&idDialog=%2Fdisk%2Fgit%2F1.png" width="250"/>
+<img height="150" src="https://github.com/malinaboky/task10_PyCharm/blob/main/pics/1.png" width="250"/>
 <img height="150" src="D:\task10_PyCharm\2.png" width="250"/>
 <img height="150" src="D:\task10_PyCharm\new_pic.jpg" width="250"/>
 
@@ -29,12 +29,12 @@ _______________________________________________
 За счет этого время выполнение программы существенно сократилось: 29638мс ---> 1108мс. Полученное время намного меньше времени выполнение old_filter.py(18813мс).
 Из этого следует, что отрефакторенный код намного быстрее первоначального.
 
-#Тестирование:
+# Тестирование:
 _______________________________________________
 
 <img height="150" src="D:\task10_PyCharm\тест.jpg" width="250"/>
 <img height="150" src="D:\task10_PyCharm\кон.jpg" width="250"/>
 
-#Отладчик:
+# Отладчик:
 _____________________________________________________
 <img height="150" src="D:\task10_PyCharm\деб.jpg" width="250"/>
