@@ -22,5 +22,4 @@ class GreyImage:
      
 orig_img = Image.open("picture.jpg")
 arr = GreyImage(orig_img).get_grey_image()
-print(GreyImage(orig_img).get_middle_color(1, 1))
 arr.save('new_pic_with_filename.jpg')
