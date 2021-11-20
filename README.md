@@ -5,11 +5,11 @@ ______________
 
 # Исходное изображение :
 _______________________________________________
-![](D:\task10_PyCharm\picture.jpg)
+![](picture.jpg)
 
 ## -Запуск filter.py
 
-<img height="150" src="D:\task10_PyCharm\1.png" width="250"/>
+<img height="150" src="https://disk.yandex.ru/client/disk/git?idApp=client&dialog=slider&idDialog=%2Fdisk%2Fgit%2F1.png" width="250"/>
 <img height="150" src="D:\task10_PyCharm\2.png" width="250"/>
 <img height="150" src="D:\task10_PyCharm\new_pic.jpg" width="250"/>
 
