@@ -49,7 +49,7 @@ class GreyImage:
                170
 
                Тест черно-белой картинки
-               >>> GreyImage(np.array(Image.open('new_pic.jpg')), 10, 50).get_middle_color(1,1)
+               >>> GreyImage(np.array(Image.open('pics/new_pic.jpg')), 10, 50).get_middle_color(1,1)
                155
         """
         return int(self.image[x:x + self.size, y:y + self.size].sum() / 3 // self.size ** 2 // self.grad * self.grad)
