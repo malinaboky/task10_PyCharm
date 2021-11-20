@@ -9,20 +9,20 @@ _______________________________________________
 
 ## -Запуск filter.py
 
-<img height="150" src="https://github.com/malinaboky/task10_PyCharm/blob/main/pics/1.png" width="250"/>
-<img height="150" src="https://github.com/malinaboky/task10_PyCharm/blob/main/pics/2.png" width="250"/>
-<img height="150" src="D:\task10_PyCharm\new_pic.jpg" width="250"/>
+<img height="300" src="https://github.com/malinaboky/task10_PyCharm/blob/main/pics/1.png" width="500"/>
+<img height="300" src="https://github.com/malinaboky/task10_PyCharm/blob/main/pics/2.png" width="500"/>
+<img height="300" src="https://github.com/malinaboky/task10_PyCharm/blob/main/pics/new_pic.jpg" width="500"/>
 
 ## -Запуск old_filter.py
 
-<img height="150" src="https://github.com/malinaboky/task10_PyCharm/blob/main/pics/3.png" width="250"/>
-<img height="150" src="https://github.com/malinaboky/task10_PyCharm/blob/main/pics/4.png" width="250"/>
-<img height="150" src="D:\task10_PyCharm\old_pic.jpg" width="250"/>
+<img height="300" src="https://github.com/malinaboky/task10_PyCharm/blob/main/pics/3.png" width="500"/>
+<img height="300" src="https://github.com/malinaboky/task10_PyCharm/blob/main/pics/4.png" width="500"/>
+<img height="300" src="https://github.com/malinaboky/task10_PyCharm/blob/main/pics/old_pic.jpg" width="500"/>
 
 ## -Запуск filter_with_filename.py
 
-<img height="150" src="https://github.com/malinaboky/task10_PyCharm/blob/main/pics/6.png" width="250"/>
-<img height="150" src="https://github.com/malinaboky/task10_PyCharm/blob/main/pics/5.png" width="250"/>
+<img height="300" src="https://github.com/malinaboky/task10_PyCharm/blob/main/pics/6.png" width="500"/>
+<img height="300" src="https://github.com/malinaboky/task10_PyCharm/blob/main/pics/5.png" width="500"/>
 
 Такая колоссальная разница времени выполнения отрефакторенного и старого кода вызвана пользовательским вводом в filter.py: программа осуществляется не сразу, ожидая ввод пользователя.
 Для проверки этой гипотезы бал создан файл filter_with_filename.py, в котором изначало прописано имя картинки и прочие необходимые параметры.
@@ -32,9 +32,9 @@ _______________________________________________
 # Тестирование:
 _______________________________________________
 
-<img height="150" src="https://github.com/malinaboky/task10_PyCharm/blob/main/pics/%D1%82%D0%B5%D1%81%D1%82.jpg" width="250"/>
-<img height="150" src="https://github.com/malinaboky/task10_PyCharm/blob/main/pics/%D0%BA%D0%BE%D0%BD.jpg" width="250"/>
+<img height="300" src="https://github.com/malinaboky/task10_PyCharm/blob/main/pics/%D1%82%D0%B5%D1%81%D1%82.jpg" width="500"/>
+<img height="300" src="https://github.com/malinaboky/task10_PyCharm/blob/main/pics/%D0%BA%D0%BE%D0%BD.jpg" width="500"/>
 
 # Отладчик:
 _____________________________________________________
-<img height="150" src="https://github.com/malinaboky/task10_PyCharm/blob/main/pics/%D0%B4%D0%B5%D0%B1.jpg" width="250"/>
+<img height="300" src="https://github.com/malinaboky/task10_PyCharm/blob/main/pics/%D0%B4%D0%B5%D0%B1.jpg" width="500"/>
