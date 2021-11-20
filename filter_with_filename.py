@@ -3,7 +3,7 @@ from PIL import Image
 
 
 class GreyImage:
-    def __init__(self, pix_array, pix_size=10, gradation=5):
+    def __init__(self, pix_array, pix_size=10, gradation=50):
         self.image = np.array(pix_array)
         self.size = pix_size
         self.grad = 255 // gradation
@@ -20,6 +20,7 @@ class GreyImage:
         return int(self.image[x:x + self.size, y:y + self.size].sum() / 3 // self.size ** 2 // self.grad * self.grad)
       
      
-orig_img = Image.open("picture.jpg")    
+orig_img = Image.open("picture.jpg")
 arr = GreyImage(orig_img).get_grey_image()
-arr.save('new_pic_with_filename')
+print(GreyImage(orig_img).get_middle_color(1, 1))
+arr.save('new_pic_with_filename.jpg')

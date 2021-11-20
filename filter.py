@@ -3,7 +3,17 @@ from PIL import Image
 
 
 class GreyImage:
-    def __init__(self, pix_array, pix_size=10, gradation=5):
+    """ Класс, преобразующий картинку в черно-белый пиксель-арт
+            Тест значения градации изображения
+            >>> res = GreyImage(np.array(Image.open('picture.jpg')), 10, 100)
+            >>> a.grad
+            2
+            Тест размера блока
+            >>> a = GreyImage(np.array(Image.open('picture.jpg')), 75, 10)
+            >>> a.size
+            75
+    """
+    def __init__(self, pix_array, pix_size=10, gradation=50):
         self.image = np.array(pix_array)
         self.size = pix_size
         self.grad = 255 // gradation
@@ -11,12 +21,34 @@ class GreyImage:
         self.height = len(self.image[0])
 
     def get_grey_image(self):
+        """ Преобразование картинки в черно-белую, пиксельную
+                Тест размера полученной картинки
+                >>> GreyImage(np.array(Image.open('picture.jpg')), 10, 50).get_grey_image().size
+                (1920, 1080)
+                >>> GreyImage(np.array(Image.open('picture_2.png')), 10, 50).get_grey_image().size
+                (750, 750)
+                :return: черно-белый картинка
+                """
         for x in range(0, self.width, self.size):
             for y in range(0, self.height, self.size):
                     self.image[x:x + self.size, y:y + self.size] = self.get_middle_color(x, y)
         return Image.fromarray(self.image)
 
     def get_middle_color(self, x, y):
+        """
+        Закрашивает блок пикселей одной градацией серого цвета и вычисляет среднее значение яркости блока
+                :param get_middle_color: Поиск нужного цвета
+                :param x: координата пикселя по оси x
+                :param y: координата пикселя по оси y
+                :return: Среднее значение яркости
+
+               Тест исходной картинки
+               >>> GreyImage(np.array(Image.open('picture.jpg')), 10, 50).get_middle_color(1,1)
+               153
+               Тест черно-белой картинки
+               >>> GreyImage(np.array(Image.open('new_pic.jpg')), 10, 50).get_middle_color(1,1)
+               153
+        """
         return int(self.image[x:x + self.size, y:y + self.size].sum() / 3 // self.size ** 2 // self.grad * self.grad)
 
 
